@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #d8b4f8, #b9a2f2);;
+  background: linear-gradient(135deg, #d8b4f8, #b9a2f2);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -10,10 +10,37 @@ body {
 
 .container {
   background-color: #ffffff;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 60px; /* increased size */
+  border-radius: 20px;
+  width: 600px; /* increased width */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3),
+              0 0 40px rgba(255, 182, 255, 0.5),
+              0 0 60px rgba(186, 104, 200, 0.4); /* glitter-style glow */
+  animation: glitterPulse 3s infinite ease-in-out;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02); /* gentle zoom on hover */
+}
+
+@keyframes glitterPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
+                0 0 20px rgba(255, 182, 255, 0.4),
+                0 0 30px rgba(186, 104, 200, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4),
+                0 0 50px rgba(255, 182, 255, 0.6),
+                0 0 70px rgba(186, 104, 200, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
+                0 0 20px rgba(255, 182, 255, 0.4),
+                0 0 30px rgba(186, 104, 200, 0.3);
+  }
 }
 
 h1 {
