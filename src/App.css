@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #f8f9fa, #e0f7fa);
+  background: linear-gradient(135deg, #8e2de2, #4a00e0)
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,6 +17,11 @@ body {
 }
 
 h1 {
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+h2 {
   color: #007BFF;
   margin-bottom: 20px;
 }
