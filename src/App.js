@@ -9,7 +9,7 @@ function App() {
         This static app is deployed to
         <strong style={{ color: '#ff6f61' }}> S3 </strong>
         and served through
-        <strong style={{ color: '#1e90ff' }}> CloudFront</strong>.
+        <strong style={{ color: '#ff6f61' }}> CloudFront</strong>.
       </p>
       <h2>By Shraddha</h2>
     </div>
