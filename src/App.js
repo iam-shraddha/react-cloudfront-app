@@ -11,7 +11,7 @@ function App() {
         and served through
         <strong style={{ color: '#ff6f61' }}> CloudFront</strong>.
       </p>
-      <h2>By Shraddha</h2>
+      <h2>By Hyperminds</h2>
     </div>
   );
 }
